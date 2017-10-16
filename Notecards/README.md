@@ -15,3 +15,8 @@ User can...
 
 To do:
 * allow user to select colors of new card
+* allow user to turn off auto save
+* make page responsive
+* don't allow textarea to go outside notecards
+* move button to the side with the rest of the buttons and made it an icon
+* move last saved date to bottom of the screen
