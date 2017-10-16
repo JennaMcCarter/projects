@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Display as grid</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js-localStorage.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+ 
+	<div>
+		<ul id="sortable">
+		  <!--<li class="col-xs-4 ui-state-default"><span style="background: #FFF;"> 
+			  <i class="fa fa-cog settingsBTN" aria-hidden="true"></i> 
+			  <p id="cardId1">1</p>
+			  <input type="text" placeholder="title" style="color: #000;">
+			  <textarea placeholder="sample text..." style="color: #000;"></textarea> 
+		  </span></li>-->
+		</ul>
+	</div>
+	  
+	  
+	  
+	
+	
+	
+	<!--save-->
+	<div style="clear: both;"> &nbsp; </div>
+	<footer>
+		<p id="lastSaved"> save</p>
+		<button id="saveCardsBTN">Save</button>
+	</footer>
+	
+	<!--refres / delete all cards-->
+	 <div id="refreshBTN" title="Delete All Data">
+		<i class="fa fa-refresh" aria-hidden="true"></i>
+	</div>
+	
+	 <!--upload-->
+	 <div id="uploadBTN" title="Upload Data">
+		<i class="fa fa-upload" aria-hidden="true"></i>
+	</div>
+	
+	<!--new card menu-->
+	<div id="uploadMenu" class="draggable">
+		<h2> Upload Data </h2>
+		<i class="fa fa-times closeSettings" aria-hidden="true"></i>
+		<textarea id="uploadDataTextArea"></textarea>
+		<button id="uploadDataBTN">Upload Data</button>
+	</div>
+	
+	
+	 <!--download-->
+	 <div id="downloadBTN" title="Download Data">
+		<i class="fa fa-download" aria-hidden="true"></i>
+	</div>
+ 
+	<!--new card-->
+	<div id="newBTN" title="Add a New Card">
+		<i class="fa fa-plus" aria-hidden="true"></i>
+	</div>
+	
+	
+	<!--new card menu-->
+	<div id="newMenu" class="draggable">
+		<h2> Add a New Card </h2>
+		<i class="fa fa-times closeSettings" aria-hidden="true"></i>
+		<input id="newCardTitle">
+		<textarea id="newCardBody"></textarea>
+		<button id="createNewBTN">Create Card</button>
+	</div>
+	
+	<!--settings-->
+	<div id="settingsMenu"  class="draggable ui-widget-content">
+		<h2> Settings </h2>
+		<i class="fa fa-times closeSettings" aria-hidden="true"></i>
+		<!--card setting-->
+		<br />
+		<p><label> Card color: </label><input type="color" name="favcolor" value="#FFFFFF" id="cardColor"></p>
+		<p><label> Text color: </label><input type="color" name="favcolor" value="#000000" id="textColor"></p>
+		<!--<p><label> Title Font Size: </label><input type="number"  value="14" id="titleSize"></p>
+		<p><label> Body Font Size: </label><input type="number" value="14" id="bodySize"></p>-->
+		<p><button type="button" class="applyBTN">Apply Changes</button></p>
+		<p><button type="button" id="deleteBTN">Delete Card</button></p>
+	</div>
+	
+	<div id="blackout"> </div>
+</body>
+</html>

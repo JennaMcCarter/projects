@@ -1,0 +1,111 @@
+/* style.css */
+
+body{
+	background: #d2d2d2;
+}
+
+#sortable { 
+	background: #d2d2d2;
+	display: block;
+	list-style-type: none; 
+	margin: 0 auto; 
+	padding: 0; 
+	width: 90%;	
+}
+
+#sortable li { 
+	padding: 0; 
+}
+
+#sortable li span{ 
+	background: #FFF; 
+	display: block;
+	margin: 10px;
+	padding: 10px; 
+	text-align: center; 
+	box-shadow: 1px 1px 15px grey;
+}
+
+#sortable  [id^=cardId] { color: transparent; }
+#sortable  [id^=cardId]:hover { cursor: move;}
+
+#sortable  input, #sortable  textarea {
+	border: none;
+    width: 100%;
+}
+
+#sortable input{ 	font-size: 22px; }
+
+#sortable  textarea {
+	margin-top: 10px;
+	height: 100px;
+}
+
+
+/* buttons */
+#newBTN, #uploadBTN, #downloadBTN, #refreshBTN{
+	position: fixed;
+	right: 0;
+	margin: 15px;
+}
+.settingsBTN { float: right; font-size: 15; }
+#newBTN { bottom: 0; }
+#uploadBTN { bottom: 120px; }
+#downloadBTN { bottom: 60px; }
+#refreshBTN { bottom: 180px; }
+#newBTN i, #uploadBTN i , #downloadBTN i, #refreshBTN i { font-size: 30px; }
+.settingsBTN:hover, #newBTN i:hover, #uploadBTN:hover , #downloadBTN:hover, #refreshBTN:hover  { cursor: pointer; }
+
+
+
+
+/* menus */
+#settingsMenu, #newMenu, #uploadMenu{
+	background: #FFF;
+	display: none;
+	margin: auto; 
+	position: fixed;
+	padding: 0 20px;
+	width: 50%;
+	height: 30%;
+	left: 25%;
+    top: 30%;
+	z-index: 2;
+}
+
+#newMenu input, #newMenu textarea, #uploadMenu textarea{
+	width: 100%;
+}
+#newMenu textarea{ margin-top: 20px; height: 100px; }
+
+#newMenu #createNewBTN, #uploadMenu button { margin: 10px auto; } 
+
+
+#settingsMenu .closeSettings:hover, #newMenu .closeSettings:hover { cursor: pointer; }
+
+#settingsMenu h2, #newMenu h2, #uploadMenu h2{
+	display: inline-block;
+	margin: 19px 0;
+}
+
+#settingsMenu .closeSettings, #newMenu .closeSettings, #uploadMenu .closeSettings{
+	float: right;
+	font-size: 20px;
+	margin: 19px;
+}
+
+#settingsMenu input {
+	margin-left: 15px;
+}
+
+
+#blackout{
+	background: rgba(0, 0, 0, 0.45);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+footer { margin: 100px 0 0 30px;  } 
